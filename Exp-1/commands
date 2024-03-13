@@ -1,0 +1,9 @@
+create table STUDENTDATA(Regno int(3),Name varchar(15), Gender char(1),DOB int(10),Mobileno int(10),City varchar(15));
+
+ create table FACULTYDATA(Facno varchar(4),FacName varchar(15),Gender char(1),DOB int(8),DOJ int(8),Mobileno int(10));
+
+create table DEPARTMENT (deptno varchar(4),deptname varchar(15),depthead varchar(4));
+
+create table COURSE(courseno varchar(3),coursedesc varchar(15),semno int(2),hallno varchar(4),facno varchar(4));
+
+ alter table FACULTY add dept char(10);
