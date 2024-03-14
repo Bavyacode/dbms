@@ -1,0 +1,11 @@
+ alter table student add primary key(regno);
+
+  alter table faculty add primary key(facno);
+  alter table faculty add check(gender='m'of'f');
+
+alter table faculty add constraint facdeptno foreign key (dept) references department(deptno);
+
+alter table department add unique key(deptno);
+
+ alter table course add primary key(courseno);
+  alter table course add check(semno>=1&&semno<=6);
