@@ -1,4 +1,5 @@
  alter table student add primary key(regno);
+alter table student modify mobileno int(10) not null;
 
   alter table faculty add primary key(facno);
   alter table faculty add check(gender='m'of'f');
