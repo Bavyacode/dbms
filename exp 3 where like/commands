@@ -1,0 +1,23 @@
+WHERE
+
+select regno,name,dob from student;
+
+select * from student where gender='f';
+
+ select * from student where gender='m' && course='c001';
+
+ select * from faculty where doj < '2014-11-01';
+
+select * from course where hallno is null;
+
+like
+
+ select * from student where name like '%ma';
+
+select * from student where name like '%ma%';
+
+select * from student where name like '%th%';
+
+select * from student where length(name) != 6;
+
+ select * from student where name like '%sal%';
