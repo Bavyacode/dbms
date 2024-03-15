@@ -1,0 +1,19 @@
+select * from courses where coursename in ('statistics','programming');
+
+select distinct courseno from courses where scores between 50 and 80;
+
+select avg(scores) from courses where courseno='c021';
+select avg(scores) from courses where courseno='c002';
+
+select coursename,max(scores),min(scores),avg(scores) from courses where semester=5 group by coursename;
+
+ select max(scores) from courses where courseno='c021';
+select min(scores) from courses where courseno='c021';
+
+select coursename,avg(scores) from courses group by coursename;
+
+ select sum(scores) from courses;
+
+select coursedesc,coursename,count(regno) from courses group by coursedesc,coursename;
+
+select coursename ,count(regno) from courses group by coursename;
