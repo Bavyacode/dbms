@@ -1,0 +1,21 @@
+ select * from student;
+insert into faculty values(234,'Ram','m','1988-03-23','2005-09-17',9080806759,'chennai','102'),(239,'Ramya','f','1989-03-29','2004-05-17',9089006759,'chennai','106');
+select * from faculty;
+insert into department values('102','biology','jim'),(898,'cse','thym');
+select * from department;
+ insert into course values(102,'medical',3,89,8979),(108,'computer',5,54,9089);
+select * from course;
+
+
+ update student set regno=192224285 where name='bavya';
+
+delete from faculty where facname='Ramya';
+
+ update faculty set dob='1983-05-01' where facname='ram';
+
+ delete from faculty WHERE TIMESTAMPDIFF(YEAR, dob, CURDATE()) > 65;
+
+select * from faculty;
+select * from student;
+select * from department;
+select * from course;
