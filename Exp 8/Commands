@@ -1,0 +1,3 @@
+select department.deptname from faculty join department where faculty.dept=department.deptno;
+
+select  student.* from student left join courses on student.regno=courses.regno where courses.regno is null;
