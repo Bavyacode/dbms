@@ -1,0 +1,5 @@
+create view as std_view as select regno,name,dob from student;
+select * from std_view;
+
+create index idx_regno on student(regno);
+show index from student;
