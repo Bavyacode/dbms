@@ -1,4 +1,4 @@
-
+select coursename ,count(regno) from courses group by coursename;
 
 select name,gender,mobileno from student order by regno asc;
 
