@@ -1,0 +1,5 @@
+select * from courses where scores > (select avg(scores) from courses);
+
+ select * from faculty where doj = (select max(doj) from faculty);
+
+select * from courses where assessments>1;
