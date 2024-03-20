@@ -2,7 +2,7 @@
 alter table student modify mobileno int(10) not null;
 
   alter table faculty add primary key(facno);
-  alter table faculty add check(gender='m'of'f');
+  alter table faculty add check(gender='m'or'f');
 
 alter table faculty add constraint facdeptno foreign key (dept) references department(deptno);
 
